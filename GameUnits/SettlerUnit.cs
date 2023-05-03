@@ -6,8 +6,8 @@ public class SettlerUnit : Unit
 
     public SettlerUnit(int movement, int health) : base(movement, health)
     {
-        Movement = 1;
-        Health = 2;
+        Movement = movement;
+        Health = health;
         Cost = 5;
     }
 }
