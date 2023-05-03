@@ -4,17 +4,19 @@ namespace GameUnits;
 
 public abstract class Unit
 {
-    private int movement;
-    public virtual int Health { get; set; }
+    protected int Movement;
+    public int Health { get; set; }
     public abstract float  Cost { get; }
 
-    public Unit(int movement)
+    protected Unit(int movement, int health)
     {
-        this.movement = movement;
+        Movement = movement;
+        Health = health;
     }
 
     public void Move()
     {
-        Console.WriteLine($"This unit moved {movement} times.");
+        Console.WriteLine($"This unit moved {Movement} times.");
     }
 }
+
