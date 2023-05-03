@@ -25,4 +25,8 @@ public class MilitaryUnit : Unit
             Xp++;
         }
     }
+    public override string ToString()
+    {
+        return $"Military Unit: HP = {Health} Cost = {Cost} Attack Power = {AttackPower} XP = {Xp}";
+    }
 }

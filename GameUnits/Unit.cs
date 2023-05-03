@@ -18,5 +18,9 @@ public abstract class Unit
     {
         Console.WriteLine($"This unit moved {Movement} times.");
     }
+    public override string ToString()
+    {
+        return $"Settler Unit: HP = {Health} Cost = {Cost}";
+    }
 }
 
