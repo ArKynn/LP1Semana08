@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVsStruct", "ClassVsStruct\ClassVsStruct.csproj", "{8845E9A2-ED10-4313-90C5-A6ADA5D3AFCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructWithRef", "StructWithRef\StructWithRef.csproj", "{5DB8A8EF-E1A2-49DE-8463-F5228E7BFA07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{8845E9A2-ED10-4313-90C5-A6ADA5D3AFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8845E9A2-ED10-4313-90C5-A6ADA5D3AFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8845E9A2-ED10-4313-90C5-A6ADA5D3AFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB8A8EF-E1A2-49DE-8463-F5228E7BFA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB8A8EF-E1A2-49DE-8463-F5228E7BFA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB8A8EF-E1A2-49DE-8463-F5228E7BFA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB8A8EF-E1A2-49DE-8463-F5228E7BFA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
