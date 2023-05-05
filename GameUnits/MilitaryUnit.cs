@@ -1,17 +1,15 @@
 ﻿namespace GameUnits;
 
-public class MilitaryUnit : Unit
+public class MilitaryUnit : XPUnit
 {
     private int AttackPower { get; }
-    private int Xp { get; set; }
     public override float Cost { get; }
 
     public MilitaryUnit(int movement, int health, int attackPower) : base(movement, health)
     {
         AttackPower = attackPower;
-        Xp = 0;
-        Health += Xp;
-        Cost = AttackPower + Xp;
+        Health += XP;
+        Cost = AttackPower + XP;
     }
 
     public void Attack(Unit u)
@@ -22,11 +20,12 @@ public class MilitaryUnit : Unit
             u.Health -= AttackPower;
             if (u.Health < 0) u.Health = 0;
             
-            Xp++;
+            XP++;
         }
     }
+
     public override string ToString()
     {
-        return $"Military Unit: HP = {Health} Cost = {Cost} Attack Power = {AttackPower} XP = {Xp}";
+        return base.ToString() + $" AP : {AttackPower}";
     }
 }
