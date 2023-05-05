@@ -6,7 +6,7 @@ public abstract class Unit
 {
     protected int Movement;
     public int Health { get; set; }
-    public abstract float  Cost { get; }
+    protected abstract float  Cost { get; init; }
 
     protected Unit(int movement, int health)
     {

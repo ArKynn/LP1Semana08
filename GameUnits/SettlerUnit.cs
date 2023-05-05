@@ -2,7 +2,7 @@
 
 public class SettlerUnit : Unit
 {
-    public override float Cost { get; }
+    protected sealed override float Cost { get; init; }
 
     public SettlerUnit(int movement, int health) : base(movement, health)
     {

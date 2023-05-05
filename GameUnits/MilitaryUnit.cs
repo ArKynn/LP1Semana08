@@ -3,7 +3,7 @@
 public class MilitaryUnit : XPUnit
 {
     private int AttackPower { get; }
-    public override float Cost { get; }
+    protected sealed override float Cost { get; init; }
 
     public MilitaryUnit(int movement, int health, int attackPower) : base(movement, health)
     {
