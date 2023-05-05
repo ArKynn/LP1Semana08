@@ -4,11 +4,9 @@ public class DiplomatUnit : XPUnit
 {
     protected sealed override float Cost { get; init; }
 
-    public DiplomatUnit(int movement, int health) : base(movement, health)
+    public DiplomatUnit() : base(6, 1)
     {
         Cost = 7.1f;
-        Movement = 6;
-        Health = 1;
     }
 
     public void MakeAgreement(Unit unit)
