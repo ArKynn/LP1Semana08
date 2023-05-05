@@ -3,13 +3,12 @@
 public class MilitaryUnit : XPUnit
 {
     private int AttackPower { get; }
-    protected sealed override float Cost { get; init; }
+    protected sealed override float Cost { get; set; }
 
     public MilitaryUnit(int movement, int health, int attackPower) : base(movement, health)
     {
         AttackPower = attackPower;
-        Health += XP;
-        Cost = AttackPower + XP;
+        Cost = AttackPower;
     }
 
     public void Attack(Unit u)
@@ -21,6 +20,8 @@ public class MilitaryUnit : XPUnit
             if (u.Health < 0) u.Health = 0;
             
             XP++;
+            Cost++;
+            Health++;
         }
     }
 

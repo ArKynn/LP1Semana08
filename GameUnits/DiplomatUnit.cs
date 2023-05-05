@@ -2,7 +2,7 @@
 
 public class DiplomatUnit : XPUnit
 {
-    protected sealed override float Cost { get; init; }
+    protected sealed override float Cost { get; set; }
 
     public DiplomatUnit() : base(6, 1)
     {

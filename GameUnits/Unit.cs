@@ -6,7 +6,7 @@ public abstract class Unit
 {
     protected int Movement;
     public int Health { get; set; }
-    protected abstract float  Cost { get; init; }
+    protected abstract float  Cost { get; set; }
 
     protected Unit(int movement, int health)
     {
@@ -20,7 +20,7 @@ public abstract class Unit
     }
     public override string ToString()
     {
-        return $"Settler Unit: HP = {Health} Cost = {Cost}";
+        return $"{this.GetType()}: HP = {Health} Cost = {Cost}";
     }
 }
 
